@@ -31,7 +31,7 @@ describe('Repetições', () =>{
         i = id
         for (i=1; i<=9; i++){
 
-            cy.get(i).click()            
+            cy.get(i).click()
         }
 
     })
