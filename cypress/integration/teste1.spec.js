@@ -22,10 +22,12 @@ describe('Meu primeiro teste', () => {
         cy.get("#3").click()
         cy.get("#4").click()
         cy.get("#5").click()
-        cy.get("#6").click()
-        cy.get("#7").click()
+        cy.get("#9").click()
+        cy.get("#10").click()
+        //cy.get("#6").click()
+        //cy.get("#7").click()
         //cy.get("#8").click()
-        //cy.get("#9").click()
+
 
     })
 })
