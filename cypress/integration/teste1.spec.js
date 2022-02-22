@@ -13,7 +13,7 @@ describe('Meu primeira visita', () => {
     })
 })
 
-describe('Meu primeiro teste', () => {
+/*describe('Meu primeiro teste', () => {
     it('teste clique', () => {
 
      //Testantando botões
@@ -30,12 +30,13 @@ describe('Meu primeiro teste', () => {
 
 
     })
-})
+})*/
 
-/*describe('Repetições', () =>{
+describe('Repetições', () =>{
     it ('loop',()=>{
 
-        i=="#id"
+        var i
+        i='#id'
         for (i=1; i<=9; i++){
 
             cy.get(i).click()
@@ -46,4 +47,4 @@ describe('Meu primeiro teste', () => {
 
 
 
-)*/
+)
