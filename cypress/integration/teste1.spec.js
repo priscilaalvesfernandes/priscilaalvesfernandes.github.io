@@ -6,39 +6,40 @@
 // https://on.cypress.io/writing-first-test
 
 
-describe('Meu primeira visita', () => {
+describe('Home', () => {
+
     it('visita site', () => {
         cy.wait(600)
         cy.visit('https://priscilaalvesfernandes.github.io')//visitando um site
     })
-})
 
-describe('Meu primeiro teste', () => {
-    it('teste clique', () => {
+    it('teste clique',
+        () => {
 
-     //Testantando botões
-        cy.get(1).click()
-        cy.get(2).click()
-        //cy.get("#3").click()
-        //cy.get("#4").click()
-       // cy.get("#5").click()
-       // cy.get("#9").click()
-       // cy.get("#10").click()
-        //cy.get("#6").click()
-        //cy.get("#7").click()
-        //cy.get("#8").click()
-
+            //Testantando botões
+            cy.get('#1').click()
+            cy.get('#2').click()
+            cy.get("#3").click()
+            cy.get("#4").click()
+            cy.get("#5").click()
+            cy.get("#6").click()
 
     })
 })
 
-/*describe('Repetições', () =>{
-    it ('loop',()=>{
+describe('Visita pagina generica', () => {
 
-        var j
-        for (var j = 1; j <=9 ; j++) {
-            cy.get(j).click()
-        }
-
+    it('visita site', () => {
+        cy.wait(600)
+        cy.visit('https://priscilaalvesfernandes.github.io/generic.html')//visitando um site
     })
-})*/
+
+    it('teste clique',
+        () => {
+            cy.get("#7").click()
+            cy.get("#8").click()
+            // cy.get("#9").click()
+            //cy.get("#10").click()
+
+        })
+})
