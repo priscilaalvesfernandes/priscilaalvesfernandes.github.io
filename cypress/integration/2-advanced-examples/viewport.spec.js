@@ -11,19 +11,20 @@ context('Viewport', () => {
     cy.get('#navbar').should('be.visible')
     cy.viewport(320, 480)
 
-    // the navbar should have collapse since our screen is smaller
+    // a barra de navegação deve ter entrado em colapso, pois nossa tela é menor
     cy.get('#navbar').should('not.be.visible')
     cy.get('.navbar-toggle').should('be.visible').click()
     cy.get('.nav').find('a').should('be.visible')
 
-    // lets see what our app looks like on a super large screen
+    // vamos ver como é nosso aplicativo em uma tela super grande
+
     cy.viewport(2999, 2999)
 
-    // cy.viewport() accepts a set of preset sizes
-    // to easily set the screen to a device's width and height
-
-    // We added a cy.wait() between each viewport change so you can see
-    // the change otherwise it is a little too fast to see :)
+    // cy.viewport() aceita um conjunto de tamanhos predefinidos
+    //      // para definir facilmente a tela para a largura e altura de um dispositivo
+    //
+    //      // Adicionamos um cy.wait() entre cada alteração da janela de visualização para que você possa ver
+    //      // a mudança, caso contrário, é um pouco rápido demais para ver :)
 
     cy.viewport('macbook-15')
     cy.wait(200)
@@ -46,14 +47,15 @@ context('Viewport', () => {
     cy.viewport('iphone-3')
     cy.wait(200)
 
-    // cy.viewport() accepts an orientation for all presets
-    // the default orientation is 'portrait'
+    // cy.viewport() aceita uma orientação para todas as predefinições
+    // a orientação padrão é 'retrato'
+
     cy.viewport('ipad-2', 'portrait')
     cy.wait(200)
     cy.viewport('iphone-4', 'landscape')
     cy.wait(200)
 
-    // The viewport will be reset back to the default dimensions
-    // in between tests (the  default can be set in cypress.json)
+    // A janela de visualização será redefinida para as dimensões padrão
+    // entre os testes (o padrão pode ser definido em cypress.json)
   })
 })

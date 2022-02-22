@@ -28,8 +28,9 @@ describe('Meu primeiro teste', () => {
 
 describe('Repetições', () =>{
     it ('loop',()=>{
-        i = id
-        for (i=1; i<=9; i++){
+        i = 0
+        i==id
+        for (i=id; i<=9; i++){
 
             cy.get(i).click()
         }
