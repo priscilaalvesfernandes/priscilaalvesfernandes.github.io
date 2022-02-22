@@ -9,17 +9,34 @@
 describe('Meu primeira visita', () => {
     it('visita site', () => {
         cy.wait(600)
-        cy.visit('https://priscilaalvesfernandes.github.io')
+        cy.visit('https://priscilaalvesfernandes.github.io')//visitando um site
     })
 })
 
 describe('Meu primeiro teste', () => {
     it('teste clique', () => {
+
+    /* Testantando botões
         cy.get("#1").click()
         cy.get("#2").click()
         cy.get("#3").click()
         cy.get("#4").click()
         cy.get("#5").click()
-
+     */
     })
 })
+
+describe('Repetições', () =>{
+    it ('loop',()=>{
+        i = id
+        for (i=1; i<=9; i++){
+
+            cy.get(i).click()            
+        }
+
+    })
+}
+
+
+
+)
