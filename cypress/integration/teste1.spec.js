@@ -16,7 +16,7 @@ describe('Meu primeira visita', () => {
 describe('Meu primeiro teste', () => {
     it('teste clique', () => {
 
-     Testantando botões
+     //Testantando botões
         cy.get("#1").click()
         cy.get("#2").click()
         cy.get("#3").click()
@@ -24,9 +24,9 @@ describe('Meu primeiro teste', () => {
         cy.get("#5").click()
         cy.get("#6").click()
         cy.get("#7").click()
-        cy.get("#8").click()
-        cy.get("#9").click()
-     
+        //cy.get("#8").click()
+        //cy.get("#9").click()
+
     })
 })
 
