@@ -10,7 +10,7 @@ context("Home", ()=>{
         cy.visit("https://priscilaalvesfernandes.github.io")
     })
     var i
-    for(i=0; i<9; i++){
+    for(i=0; i<10; i++){
         it('teste clique',
             () => {
 
