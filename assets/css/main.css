@@ -173,6 +173,17 @@ input, select, textarea {
 	p {
 		margin: 0 0 2em 0;
 	}
+	p.github{
+		display: block;
+		line-height: 2.5em;
+		margin: 0 0 1.3em 0;
+		width: 900px;
+		position: absolute;
+		right: 0px;
+		top: 200px;
+	}
+
+
 
 	h1, h2, h3, h4, h5, h6 {
 		color: #ffffff;
@@ -1816,6 +1827,8 @@ input, select, textarea {
 			padding: 0;
 		}
 
+
+
 /* Button */
 
 	input[type="submit"],
@@ -2222,6 +2235,7 @@ input, select, textarea {
 
 /* Form */
 
+
 	form {
 		margin: 0 0 2em 0;
 	}
@@ -2559,6 +2573,7 @@ input, select, textarea {
 					color: #953d75;
 				}
 
+
 /* Image */
 
 	.image {
@@ -2596,7 +2611,7 @@ input, select, textarea {
 		.image.fit {
 			display: block;
 			margin: 0 0 2em 0;
-			width: 100%;
+			width: 20%;
 		}
 
 			.image.fit img {
@@ -2614,7 +2629,14 @@ input, select, textarea {
 			}
 
 /* List */
-
+	hr {
+		border: 0;
+		border-top: solid 1px #444;
+		border-top-color: rgba(0, 0, 0, 0.35);
+		box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.1);
+		height: 1px;
+		margin: 3em 0;
+	}
 	ol {
 		list-style: decimal;
 		margin: 0 0 2em 0;
