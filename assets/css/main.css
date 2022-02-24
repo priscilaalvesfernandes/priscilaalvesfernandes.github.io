@@ -24,52 +24,52 @@ section, summary, time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;}
 
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;}
+	article, aside, details, figcaption, figure,
+	footer, header, hgroup, menu, nav, section {
+		display: block;}
 
-body {
-	line-height: 1;
-}
-
-ol, ul {
-	list-style: none;
-}
-
-blockquote, q {
-	quotes: none;
-}
-
-	blockquote:before, blockquote:after, q:before, q:after {
-		content: '';
-		content: none;
+	body {
+		line-height: 1;
 	}
 
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+	ol, ul {
+		list-style: none;
+	}
 
-body {
-	-webkit-text-size-adjust: none;
-}
+	blockquote, q {
+		quotes: none;
+	}
 
-mark {
-	background-color: transparent;
-	color: inherit;
-}
+		blockquote:before, blockquote:after, q:before, q:after {
+			content: '';
+			content: none;
+		}
 
-input::-moz-focus-inner {
-	border: 0;
-	padding: 0;
-}
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
 
-input, select, textarea {
-	-moz-appearance: none;
-	-webkit-appearance: none;
-	-ms-appearance: none;
-	appearance: none;
-}
+	body {
+		-webkit-text-size-adjust: none;
+	}
+
+	mark {
+		background-color: transparent;
+		color: inherit;
+	}
+
+	input::-moz-focus-inner {
+		border: 0;
+		padding: 0;
+	}
+
+	input, select, textarea {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		-ms-appearance: none;
+		appearance: none;
+	}
 
 /* Basic */
 
@@ -182,8 +182,6 @@ input, select, textarea {
 		right: 0px;
 		top: 200px;
 	}
-
-
 
 	h1, h2, h3, h4, h5, h6 {
 		color: #ffffff;
