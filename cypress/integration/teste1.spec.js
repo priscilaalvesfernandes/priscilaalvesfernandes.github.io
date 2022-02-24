@@ -6,13 +6,14 @@
 
 context("Home", ()=>{
     beforeEach( ()=>{
-        cy.wait(4000)
+        cy.wait(1000)
         cy.visit("https://priscilaalvesfernandes.github.io")
     })
-    var i
-    var j=0
 
-    while(j<=3){
+    var j=0
+    var i
+
+
 
         for(i=0; i<3; i++){
             it('teste clique',
@@ -22,11 +23,10 @@ context("Home", ()=>{
                     //cy.contains()
                     cy.get("#" +i).click() //adiciona o valor de i ao ID
 
-                    //cy.visit("https://priscilaalvesfernandes.github.io")
+                    cy.visit("https://priscilaalvesfernandes.github.io")
             })
         }
-        j++
-    }
+
 })
 
 
