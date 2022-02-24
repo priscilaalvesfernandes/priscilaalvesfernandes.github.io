@@ -6,20 +6,24 @@
 
 context("Home", ()=>{
     beforeEach( ()=>{
-        cy.wait(600)
+        cy.wait(4000)
         cy.visit("https://priscilaalvesfernandes.github.io")
     })
-    var i
-    for(i=0; i<10; i++){
-        it('teste clique',
-            () => {
+    var i,j
 
-                //cy.get("a#") assim chama apena o que esta dentro da tag A.
-                //cy.contains()
-                cy.get("#" +i).click() //adiciona o valor de i ao ID
+    while (i<3){
+        for(j=0; j<3; j++){
+            it('teste clique',
+                () => {
 
-                cy.visit("https://priscilaalvesfernandes.github.io")
-        })
+                    //cy.get("a#") assim chama apena o que esta dentro da tag A.
+                    //cy.contains()
+                    cy.get("#" +i).click() //adiciona o valor de i ao ID
+
+                    //cy.visit("https://priscilaalvesfernandes.github.io")
+            })
+        }
+        i++
     }
 })
 
