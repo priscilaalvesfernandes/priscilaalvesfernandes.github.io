@@ -1,39 +1,22 @@
-// teste_linear.js created with Cypress
-//
-// .click({force:true}), usado qdo exite hyperlink para um site externo, finalidade de fazer com que o bot ignore mensagens
-
-
+// teste_aleatotio.js created with Cypress
 
 describe("Home", ()=>
 {
     beforeEach( ()=>
     {
-        cy.wait(400)
+        cy.wait(100)
         cy.visit("https://priscilaalvesfernandes.github.io")
 
     })
-
-
-    for(let i=1; i<=12; i++)
-    {
-        it('teste clique', () =>
-        {
-
-            if(i>5 && i<11){
-                cy.visit("https://priscilaalvesfernandes.github.io/informacoes.html")
-            }
-            if(i==11 || i==12){
-                cy.visit("https://priscilaalvesfernandes.github.io/trabalho.html")
-            }
-            cy.get("#" +i).click() //adiciona o valor de i ao ID
-
-
-            //cy.get("a#") assim chama apena o que esta dentro da tag A. cy.contains()
-
+    cy.get('#button')
+    cy.should('have.length.gt',3).then(($button)=> {
+        const button = $li.toArray()
+        return Cypress ._.sample(button)
         })
-
-        
-     }
+    cy.then(($li)=>{
+        expect(Cypress.dom.isJquery($li), 'jQuery element').to.be.true
+        cy.log('achou"${$li.text()}`"')
+    })
+    cy.click
+    cy.get('#button .clicked').should('have.length',1)
 })
-
-

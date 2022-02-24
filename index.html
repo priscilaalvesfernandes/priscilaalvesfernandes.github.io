@@ -174,5 +174,21 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
+		<ul id = "button"></ul>
+		<script>
+			setTimeout(() =>{
+				const list= document.getElementById('button')
+				list.innerHTML = '<li class="aln-bottom">1</li>'
+				list.innerHTML = '<li class="aln-bottom">2</li>'
+				list.innerHTML = '<li class="aln-bottom">3</li>'
+
+				list.addEventListener('click', (e) => {
+					e.target;classList.add('clicked')
+
+				})
+			},1000)
+		</script>
+
+
 	</body>
 </html>
