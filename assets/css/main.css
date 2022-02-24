@@ -177,10 +177,9 @@ section, summary, time, mark, audio, video {
 		display: block;
 		line-height: 2.5em;
 		margin: 0 0 1.3em 0;
-		width: 900px;
-		position: absolute;
-		right: 0px;
-		top: 200px;
+		position: inherit;
+		left: 400px;
+		top: 0px;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
