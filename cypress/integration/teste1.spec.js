@@ -9,10 +9,12 @@ context("Home", ()=>{
         cy.wait(4000)
         cy.visit("https://priscilaalvesfernandes.github.io")
     })
-    var i,j
+    var i
+    var j=0
 
-    while (i<3){
-        for(j=0; j<3; j++){
+    while(j<=3){
+
+        for(i=0; i<3; i++){
             it('teste clique',
                 () => {
 
@@ -23,7 +25,7 @@ context("Home", ()=>{
                     //cy.visit("https://priscilaalvesfernandes.github.io")
             })
         }
-        i++
+        j++
     }
 })
 
