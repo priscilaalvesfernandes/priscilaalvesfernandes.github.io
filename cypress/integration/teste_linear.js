@@ -18,15 +18,18 @@ describe("Home", ()=>
     {
         it('teste clique', () =>
         {
-
            if(i>5 && i<11){
                cy.visit("https://priscilaalvesfernandes.github.io/informacoes.html")
+
            }
-           else
-               if (i>10 && i<=12){
-                   cy.visit("https://priscilaalvesfernandes.github.io/trabalho.html")
-               }
-                     cy.get("#" +i).click() //adiciona o valor de i ao ID
+
+           if (i==11){
+               cy.visit("https://priscilaalvesfernandes.github.io/trabalho.html")
+
+               cy.visit("https://priscilaalvesfernandes.github.io")
+
+           }
+           cy.get("#" +i).click() //adiciona o valor de i ao ID
 
 
 
