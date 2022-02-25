@@ -24,7 +24,6 @@ describe("Teste Linear", ()=>
 
            if (i==11 || i==12){
                cy.visit("https://priscilaalvesfernandes.github.io/trabalho.html")
-
            }
            cy.get("#" +i).click() //adiciona o valor de i ao ID
 
