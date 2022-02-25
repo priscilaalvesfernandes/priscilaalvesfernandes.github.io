@@ -23,11 +23,10 @@ describe("Home", ()=>
 
            }
 
-           if (i==11){
+           if (i==11 || i==12){
                cy.visit("https://priscilaalvesfernandes.github.io/trabalho.html")
 
-               cy.visit("https://priscilaalvesfernandes.github.io")
-
+              // cy.visit("https://priscilaalvesfernandes.github.io")
            }
            cy.get("#" +i).click() //adiciona o valor de i ao ID
 
