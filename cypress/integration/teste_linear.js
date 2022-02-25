@@ -4,7 +4,7 @@
 
 
 
-describe("Home", ()=>
+describe("Teste Linear", ()=>
 {
     beforeEach( ()=>
     {
@@ -12,7 +12,6 @@ describe("Home", ()=>
         cy.visit("https://priscilaalvesfernandes.github.io")
 
     })
-
 
     for(let i=1; i<=12; i++)
     {
@@ -26,17 +25,12 @@ describe("Home", ()=>
            if (i==11 || i==12){
                cy.visit("https://priscilaalvesfernandes.github.io/trabalho.html")
 
-              // cy.visit("https://priscilaalvesfernandes.github.io")
            }
            cy.get("#" +i).click() //adiciona o valor de i ao ID
-
-
 
             //cy.get("a#") assim chama apena o que esta dentro da tag A. cy.contains()
 
         })
-
-
      }
 })
 
